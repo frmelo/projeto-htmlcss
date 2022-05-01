@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:rgb(234, 196, 112);
+    font-family: 'Caveat', cursive;
+   /*font-size: 25px; */
+    }
+  /*  #cabecalho{
+        background-color: black;
+        width: auto;
+        color: white;
+        height: 120px;
+        margin: 20px auto;
+        padding-left:20px;
+        padding-top:10px;
+    }*/
+ul {
+    list-style: none;
+    font-size: 30px;
+    font-style: italic;
+ /*   font-weight: 700; */
+    }
+a {
+    text-decoration: none;
+}
+body {
+    background-image: url(./pexels-guilherme-rossi-1755680.jpg);
+    background-image: -o-linear-gradient(center);
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size: cover;
+    }
+header{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+  /*  border-bottom: 1px solid #ffffff;*/
+    box-shadow: 2px 1px 10px rgb(234, 196, 112);
+   /* border-bottom: 15px ridge #fff;*/
+   margin-bottom: 45px;
+
+
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    padding: 5px;
+    border-bottom: 1px dashed rgb(234, 196, 112);
+    
+}
+header ul li a:hover {
+    color: #d88846;
+    text-decoration: underline;
+    transition: 700ms;
+    
+}
+.container {
+        text-align: center;
+    }
+    
+.container .name h1{
+        font-size: 50px;
+    }
+    
+.container .name h5{
+    font-size: 20px;
+}
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+@keyframes blink{
+    to{
+        visibility: hidden;
+    }
+}
+#animation{
+    transition: 300ms;
+}
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+.active{
+    display:block !important;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.form {
+    width: 30%;
+    margin: 0 auto;
+ /*   border-bottom: 10px;
+    border: 10px 10px yellow;
+    padding: 10px;*/
+   /* border: thick double rgb(234, 196, 112);*/
+   /* border: medium double rgb(234, 196, 112); */
+    padding: 10px;
+    margin-top: 30px;
+}
+.form input {
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+.form button {
+    width: 15%;
+    padding: 5px 10px;
+   /* background-color: rgb(234, 196, 112);*/
+    background: linear-gradient(to right, #e8c356 50%, #a68a36 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+   /* transition: 800ms;*/
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -5px;
+    margin-top: 10px;
+}
+form button:hover {
+    background-position: left bottom;
+    /*   background-color: #d88846;*/
+    color: #000;
+}
+
+@media only screen and (max-width: 768px){
+    .form{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .container .name h1{
+        font-size: 30px
+    }
+    .container .name h5 {
+        font-size: 15px;
+    }
+    #about p{
+        max-width: 80%;
+        text-align: justify;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*<style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1, span {
+            color:rgb(17, 17, 212);
+        }
+    </style>*/
